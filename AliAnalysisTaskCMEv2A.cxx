@@ -3395,8 +3395,8 @@ void AliAnalysisTaskCMEv2A::UserExec(Option_t *)
       cout<<"difference = ntrk - nbad = "<<d_ntrk-badbit<<endl;
       cout<<"number of dcacov errors "<<dcacoverrors<<endl;
     }
-  float fuckyou = float(dcacoverrors)/float(d_ntrk);
-  fHistDCACOVerrors->Fill(fuckyou);
+  float oops = float(dcacoverrors)/float(d_ntrk);
+  fHistDCACOVerrors->Fill(oops);
 
   float tpcX[9], tpcY[9], tpcQQ[9];//, qq[9];
   float tpcXp[9], tpcYp[9], tpcQQp[9], tpcQQpp[9];//, qqp[9]; // pos
